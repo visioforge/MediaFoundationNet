@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ProductVersion>9.0.30729</ProductVersion>
+		<ProjectGuid>{B78C0F3B-071A-4FD2-829D-7A67E0F7BD1C}</ProjectGuid>
+		<RootNamespace>MediaFoundation</RootNamespace>
+		<AssemblyName>MediaFoundation</AssemblyName>
+		<TargetFrameworks>net472;net5.0-windows;net6.0-windows;netcoreapp3.1</TargetFrameworks>
+		<AssemblyTitle>MediaFoundation .Net Library</AssemblyTitle>
+		<Product>Release Version</Product>
+		<Description>.NET Interfaces for calling MediaFoundation.  See http://mfnet.sourceforge.net/</Description>
+		<Copyright>GNU Lesser General Public License v2.1 or BSD</Copyright>
+		<AssemblyVersion>3.1.0.0</AssemblyVersion>
+		<FileVersion>3.1.0.0</FileVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>full</DebugType>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;ALLOW_UNTESTED_INTERFACES</DefineConstants>
+		<RegisterForComInterop>false</RegisterForComInterop>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<DefineConstants>ALLOW_UNTESTED_INTERFACES</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+		<OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;ALLOW_UNTESTED_INTERFACES</DefineConstants>
+		<DebugType>full</DebugType>
+		<RegisterForComInterop>false</RegisterForComInterop>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+		<OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+		<DebugType>pdbonly</DebugType>
+		<DefineConstants>ALLOW_UNTESTED_INTERFACES</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+		<OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;ALLOW_UNTESTED_INTERFACES</DefineConstants>
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+		<DebugType>pdbonly</DebugType>
+		<DefineConstants>ALLOW_UNTESTED_INTERFACES</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PostBuildEvent />
+		<Nullable>disable</Nullable>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/visioforge/MediaFoundationNet</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/visioforge/MediaFoundationNet</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>MediaFoundation, MediaFoundation.Net, MFNET</PackageTags>
+		<PackageLicenseFile>license.txt</PackageLicenseFile>
+		<Version>3.1.0</Version>
+		<PackageId>$(AssemblyName).NetCore</PackageId>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\license.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+	</ItemGroup>
+</Project>
