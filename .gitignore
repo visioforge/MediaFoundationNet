@@ -33,3 +33,5 @@
 
 bin/
 obj/
+nuget_push.ps1
+src/.vs/
