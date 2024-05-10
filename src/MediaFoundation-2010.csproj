@@ -4,13 +4,13 @@
 		<ProjectGuid>{B78C0F3B-071A-4FD2-829D-7A67E0F7BD1C}</ProjectGuid>
 		<RootNamespace>MediaFoundation</RootNamespace>
 		<AssemblyName>MediaFoundation</AssemblyName>
-		<TargetFrameworks>net472;net5.0-windows;net6.0-windows;netcoreapp3.1</TargetFrameworks>
+		<TargetFrameworks>net461;net472;net5.0-windows;net6.0-windows;net7.0-windows;net8.0-windows;netcoreapp3.1</TargetFrameworks>
 		<AssemblyTitle>MediaFoundation .Net Library</AssemblyTitle>
 		<Product>Release Version</Product>
 		<Description>.NET Interfaces for calling MediaFoundation.  See http://mfnet.sourceforge.net/</Description>
 		<Copyright>GNU Lesser General Public License v2.1 or BSD</Copyright>
-		<AssemblyVersion>3.1.0.0</AssemblyVersion>
-		<FileVersion>3.1.0.0</FileVersion>
+		<AssemblyVersion>2024.5.10</AssemblyVersion>
+		<FileVersion>2024.5.10</FileVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DebugType>full</DebugType>
@@ -54,7 +54,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>MediaFoundation, MediaFoundation.Net, MFNET</PackageTags>
 		<PackageLicenseFile>license.txt</PackageLicenseFile>
-		<Version>3.1.0</Version>
+		<Version>2024.5.10</Version>
 		<PackageId>$(AssemblyName).NetCore</PackageId>
 	</PropertyGroup>
 	<ItemGroup>
